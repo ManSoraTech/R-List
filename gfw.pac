@@ -1,5 +1,5 @@
 /*
- * Last Updated:2017-08-06 09:42:49
+ * Last Updated:2017-08-06 09:52:02
  */
 var direct = "__DIRECT__";
 if (direct == "__DIR" + "ECT__") direct = "DIRECT;";
@@ -18,7 +18,6 @@ var ipv6_proxy = function(){ return nowall_proxy(); };
  
 /*
  * Copyright (C) 2017 Toyo
- * https://softs.pw/Other/pac.txt
  */
 
 var rules = [
