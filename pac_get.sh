@@ -865,5 +865,5 @@ urlsafe_base64_d(){
 PAC_TEXT=$(curl -m 10 -s "${PAC_URL}")
 PAC_BASE64=$(urlsafe_base64_d "${PAC_TEXT}"|grep -v "!"|sed '1d;s/\\/\\\\/g;/^\s*$/d;s/^/	"&/g;s/$/&",/g;$s/.$//')
 PAC_NUM=$(echo "${PAC_BASE64}"|wc -l)
-echo "${PAC_TAME}${PAC_prefix}${PAC_BASE64}${PAC_suffix}" > gfw.pac
+echo "${PAC_TAME}${PAC_prefix}${PAC_BASE64}${PAC_suffix}" > ./ss_gfw.pac
 echo "${PAC_NUM}"
